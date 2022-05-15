@@ -11,6 +11,8 @@
 <body>
     <div id="app">
         {{divide}}
+        {{nose}}
+        
         <nav class="nav__container">
             NAVBAR
         </nav>
@@ -18,16 +20,62 @@
             Banner
         </section >
         <section class="product__container">
-            <h2>Featured</h2>
-
+            <div class="title">
+                <h3>Featured</h3>
+            </div>
+            
         </section>
         <section class="product__container">
-            
+
             <div class="product__container-toys">
+                <div class="title">
+                    <h3 >Juguetes</h3>
+                
+                </div>
+                
+                <div class="card" v-for="data in dataToys" >
+                    <img v-bind:src="data.imagen" alt="" class="card-img">
 
+                    <div class="card-description">
+                        <p class="name">{{data.nombre}}</p>
+                        <p class="description">{{(cheked.includes(data._id))?data.descripcion:data.descripcion.slice(0,120)}}</p>
+                        <input type="checkbox" name="" v-bind:id="data._id" v-model="cheked" v-bind:value="data._id" class="mostarMas">
+                        <label v-bind:for="data._id">{{(cheked.includes(data._id))?"Mostar menos":"Mostar mas"}}</label>
+                        <div class="card-inputs">
+                            <div class="precio">
+                                <p>${{data.precio}}</p>
+                            </div>
+                            <div class="addCart">
+                                <button>Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
+            
             <div class="product__container-Meds">
-
+                <div class="title">
+                    <h3>Farmacia</h3>
+                </div>
+                
+                <div class="card" v-for="data in dataMeds">
+                    <img v-bind:src="data.imagen" alt="" class="card-img">
+                    
+                    <div class="card-description">
+                        <p class="name">{{data.nombre}}</p>
+                        <p class="description">{{data.descripcion}}</p>
+                        <div class="card-inputs">
+                            <div class="precio">
+                                <p>${{data.precio}}</p>
+                            </div>
+                            <div class="addCart">
+                                <button>Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
             </div>
         </section>
         <footer>
