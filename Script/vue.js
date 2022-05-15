@@ -6,6 +6,7 @@ Vue.createApp({
             data:[],
             dataToys:[],
             dataMeds:[],
+            cheked:[],
         }   
         
     },
@@ -14,7 +15,6 @@ Vue.createApp({
         
     },
     mounted(){
-        
     },
     methods:{
         
@@ -24,7 +24,12 @@ Vue.createApp({
             this.dataToys = this.data.filter(e => e.tipo.includes("Juguete"));
             console.log(this.dataToys)
             this.dataMeds = this.data.filter(e => e.tipo.includes("Medicamento"));
-            console.log(this.dataMeds)
+            
+            
+        },
+        nose:function(){
+            console.log(this.cheked)
         }
+
     }
 }).mount('#app')
