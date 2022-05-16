@@ -22,17 +22,45 @@ body, html {
   .bgimg-2 {
     background-image: url("/images/imagen-2.jpeg");
     min-height: 400px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
   }
   
   .bgimg-3 {
     background-image: url("/images/imagen-3.jpeg");
     min-height: 400px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
   }
   
   .caption {
     position: absolute;
     left: 0;
     top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+
+  .captionTop {
+    position: absolute;
+    left: 0;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+
+  .captionBottom {
+    position: absolute;
+    left: 0;
+    top: 85%;
     width: 100%;
     text-align: center;
     color: #000;
@@ -45,12 +73,34 @@ body, html {
     font-size: 25px;
     letter-spacing: 10px;
   }
+
+  .captionTop span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+
+  .captionBottom span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
   
   h3 {
     letter-spacing: 5px;
     text-transform: uppercase;
     font: 20px "Lato", sans-serif;
     color: #111;
+  }
+
+  .tableAccesorios {
+    font-size:large;
+    color: #000;
+    font-weight: 500;
   }
   
   /* Turn off parallax scrolling for tablets and phones */
