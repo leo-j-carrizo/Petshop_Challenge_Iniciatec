@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toys</title>
+    <link rel="stylesheet" href="../Assets/styles/main.css">
+    <link rel="stylesheet" href="../Assets/styles/toys.css">
+</head>
+<body>
+    <div id="app">
+        {{divide}}
+        {{nose}}
+        
+        <nav class="nav__container">
+            NAVBAR
+        </nav>
+        <section class="banner__container">
+            Banner
+        </section >
+        <section class="product__container">
+            <div class="title">
+                <h3>Featured</h3>
+            </div>
+            
+        </section>
+        <section class="product__container">
+
+            <div class="product__container-toys">
+                <div class="title">
+                    <h3 >Juguetes</h3>
+                
+                </div>
+                
+                <div class="card" v-for="data in dataToys" >
+                    <img v-bind:src="data.imagen" alt="" class="card-img">
+
+                    <div class="card-description">
+                        <p class="name">{{data.nombre}}</p>
+                        <p class="description">{{(cheked.includes(data._id))?data.descripcion:data.descripcion.slice(0,120)}}</p>
+                        <input type="checkbox" name="" v-bind:id="data._id" v-model="cheked" v-bind:value="data._id" class="mostarMas">
+                        <label v-bind:for="data._id">{{(cheked.includes(data._id))?"Mostar menos":"Mostar mas"}}</label>
+                        <div class="card-inputs">
+                            <div class="precio">
+                                <p>${{data.precio}}</p>
+                            </div>
+                            <div class="addCart">
+                                <button>Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="product__container-Meds">
+                <div class="title">
+                    <h3>Farmacia</h3>
+                </div>
+                
+                <div class="card" v-for="data in dataMeds">
+                    <img v-bind:src="data.imagen" alt="" class="card-img">
+                    
+                    <div class="card-description">
+                        <p class="name">{{data.nombre}}</p>
+                        <p class="description">{{data.descripcion}}</p>
+                        <div class="card-inputs">
+                            <div class="precio">
+                                <p>${{data.precio}}</p>
+                            </div>
+                            <div class="addCart">
+                                <button>Añadir al carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="../Script/vue.js"></script>
+</body>
+</html>
