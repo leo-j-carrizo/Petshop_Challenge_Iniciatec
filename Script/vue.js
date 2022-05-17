@@ -27,9 +27,7 @@ Vue.createApp({
             
             
         },
-        nose:function(){
-            console.log(this.cheked)
-        }
+        
 
     }
 }).mount('#app')
