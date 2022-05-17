@@ -257,6 +257,8 @@ header{
     position: absolute;
     background-color: red;
     right: 0px;
+    top: 0px;
+    border-radius: 0 10px 0 0px;
 }
 
 /* footer */
@@ -399,6 +401,10 @@ header{
     footer {
         width: 100vw;
    }
+}
+
+.stockCounter{
+    width: 60px;
 }
 
 
