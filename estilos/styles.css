@@ -129,6 +129,34 @@ h3 {
 
 .radiusImg {
   border-radius: 100%;
+  object-fit: contain;
+  background-color: white;
+  height: 150px;
+  width: 150px;
+}
+
+.imgUno {
+  background-image: url("../images/imagenHamster.jpg");
+  background-position: center;
+  background-size: 200px;
+}
+
+.imgDos {
+  background-image: url("../images/imagenConejo.jpg");
+  background-position: center;
+  background-size: 200px;
+}
+
+.imgTres {
+  background-image: url("../images/imagenPez2.jpg");
+  background-position: center;
+  background-size: 200px;
+}
+
+.imgCuatro {
+  background-image: url("../images/ImagenLoro.jpg");
+  background-position: center;
+  background-size: 200px;
 }
 
 .radiusImg:hover {
