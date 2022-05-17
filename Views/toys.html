@@ -1,89 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toys</title>
-    <link rel="stylesheet" href="../Assets/styles/main.css">
-    <link rel="stylesheet" href="../Assets/styles/toys.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juguetes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../Assets/styles/main.css">
+  <link rel="stylesheet" href="../Assets/styles/toys.css">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
 </head>
+
 <body>
-    <div id="app">
-        {{divide}}
-        {{nose}}
+  <div id="app">
+    {{divide}}
+
+    <header>
+      <div class="logo__container">
+        <img src="../Assets/img/logo3.svg" alt="" class="logo">
+
+        <h1>Franco Petshop</h1>
+
+      </div>
+      
         
-        <nav class="nav__container">
-            NAVBAR
-        </nav>
-        <section class="banner__container">
-            Banner
-        </section >
-        <section class="product__container">
-            <div class="title">
-                <h3>Featured</h3>
-            </div>
-            
-        </section>
-        <section class="product__container">
 
-            <div class="product__container-toys">
-                <div class="title">
-                    <h3 >Juguetes</h3>
-                
-                </div>
-                
-                <div class="card" v-for="data in dataToys" >
-                    <img v-bind:src="data.imagen" alt="" class="card-img">
+      
+      <nav class="nav__container">
+        <ul class="nav">
+          <li><a href="" class="nav-link">Inicio</a></li>
+          <li><a href="" class="nav-link">Farmacia</a></li>
+          <li><a href="" class="nav-link">Jugueteria</a></li>
+          <li><a href="" class="nav-link">Contactanos</a></li>
+        </ul>
+      </nav>
+      <div class="user">
+        <i class='bx bx-cart'></i>
+      </div>
 
-                    <div class="card-description">
-                        <p class="name">{{data.nombre}}</p>
-                        <p class="description">{{(cheked.includes(data._id))?data.descripcion:data.descripcion.slice(0,120)}}</p>
-                        <input type="checkbox" name="" v-bind:id="data._id" v-model="cheked" v-bind:value="data._id" class="mostarMas">
-                        <label v-bind:for="data._id">{{(cheked.includes(data._id))?"Mostar menos":"Mostar mas"}}</label>
-                        <div class="card-inputs">
-                            <div class="precio">
-                                <p>${{data.precio}}</p>
-                            </div>
-                            <div class="addCart">
-                                <button>Añadir al carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="product__container-Meds">
-                <div class="title">
-                    <h3>Farmacia</h3>
-                </div>
-                
-                <div class="card" v-for="data in dataMeds">
-                    <img v-bind:src="data.imagen" alt="" class="card-img">
-                    
-                    <div class="card-description">
-                        <p class="name">{{data.nombre}}</p>
-                        <p class="description">{{data.descripcion}}</p>
-                        <div class="card-inputs">
-                            <div class="precio">
-                                <p>${{data.precio}}</p>
-                            </div>
-                            <div class="addCart">
-                                <button>Añadir al carrito</button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-        <footer>
 
-        </footer>
+
+    </header>
+
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../Assets/img/altura900.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../Assets/img/coli900.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="../Assets/img/gato900.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-    <script src="https://unpkg.com/vue@3"></script>
-    <script src="../Script/vue.js"></script>
+    
+      
+    <section class="payment__container">
+      <div class="info-slide">
+        <div class="img-container"><svg width="110" height="72" viewBox="0 0 100 64" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M93.2408 62.9211H6.67416C3.90421 62.9211 1.65842 60.6601 1.65842 57.8715V6.18042C1.65842 3.3918 3.90421 1.13086 6.67416 1.13086H93.2408C96.0108 1.13086 98.2566 3.3918 98.2566 6.18042V57.8715C98.2566 60.6601 96.0108 62.9211 93.2408 62.9211"
+              fill="white"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M2.01843 52.3887C2.01843 55.3848 4.92951 57.8222 8.55257 57.8965L8.72291 57.8983H91.4564C95.1011 57.8983 98.0663 55.5069 98.1567 52.5287L98.1588 52.3887V56.3977C98.1588 60.1151 95.1581 63.1286 91.4564 63.1286H8.72291C5.02119 63.1286 2.01843 60.1151 2.01843 56.3977V52.3887Z"
+              fill="#EEEEEE"></path>
+            <path
+              d="M93.2408 62.9211H6.67416C3.90421 62.9211 1.65842 60.6601 1.65842 57.8715V6.18042C1.65842 3.3918 3.90421 1.13086 6.67416 1.13086H93.2408C96.0108 1.13086 98.2566 3.3918 98.2566 6.18042V57.8715C98.2566 60.6601 96.0108 62.9211 93.2408 62.9211"
+              stroke="#333333" stroke-width="1.5"></path>
+            <path d="M12.8498 49.6871H52.1398" stroke="#333333" stroke-width="1.5"></path>
+            <path d="M58.647 49.6871H67.2361" stroke="#333333" stroke-width="1.5"></path>
+            <path d="M12.8498 39.5511H25.6264" stroke="#333333" stroke-width="1.5"></path>
+            <circle cx="19.2381" cy="15.1766" r="7.06135" class="icon--custom-color" fill="#22277A" stroke="white"
+              stroke-width="1.5"></circle>
+            <circle cx="19.2381" cy="15.1766" r="7.81135" stroke="#333333" stroke-width="1.5"></circle>
+            <circle cx="31.6321" cy="15.1766" r="7.81135" fill="white" stroke="#333333" stroke-width="1.5"></circle>
+            <path d="M33.0552 39.5511H45.8318" stroke="#333333" stroke-width="1.5"></path>
+            <path d="M53.2605 39.5511H66.0372" stroke="#333333" stroke-width="1.5"></path>
+            <path d="M73.4659 39.5511H86.2425" stroke="#333333" stroke-width="1.5"></path>
+          </svg></div>
+        <h1 class="">Pagá con tarjeta o en efectivo</h1>
+        <p>Con Mercado Pago, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
+          seguro!</p>
+      </div>
+      <div class="info-slide margin">
+        <div class="img-container"><svg width="98" height="72" viewBox="0 0 98 72" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M91.0891 63.738V69.493C91.0891 70.0453 90.6414 70.493 90.0891 70.493H6.8494C6.29711 70.493 5.8494 70.0453 5.8494 69.493V17.1445H91.0891V51.1198V63.738Z"
+              fill="white"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M60.979 4.73828H35.4449V17.1456H6.83506V22.4396H35.4449V40.1409L41.8284 34.9728L48.212 40.1409L54.5955 34.9728L60.979 40.1409V22.4396H91.0211V17.1456H60.979V4.73828ZM5.8494 65.6768H91.0211V70.4927H5.8494V65.6768Z"
+              fill="#EEEEEE"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M91.0891 63.738V69.493C91.0891 70.0453 90.6414 70.493 90.0891 70.493H6.8494C6.29711 70.493 5.8494 70.0453 5.8494 69.493V17.1445H91.0891V51.1198V63.738Z"
+              stroke="#333333" stroke-width="1.5"></path>
+            <rect x="0.810059" y="1.5" width="95.4" height="15.6" rx="2" fill="white" stroke="#333333"
+              stroke-width="1.5"></rect>
+            <mask id="path-5-inside-1" fill="white">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M60.48 1.5H35.88V34.8052L42.03 29.9089L48.18 34.8052L54.33 29.9089L60.48 34.8052V1.5ZM14.5621 62.1646H31.0006V51.2866H14.5621V62.1646Z">
+              </path>
+            </mask>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M60.48 1.5H35.88V34.8052L42.03 29.9089L48.18 34.8052L54.33 29.9089L60.48 34.8052V1.5ZM14.5621 62.1646H31.0006V51.2866H14.5621V62.1646Z"
+              class="icon--custom-color" fill="#22277A"></path>
+            <path
+              d="M35.88 1.5V0H34.38V1.5H35.88ZM60.48 1.5H61.98V0H60.48V1.5ZM35.88 34.8052H34.38V37.9168L36.8143 35.9787L35.88 34.8052ZM42.03 29.9089L42.9643 28.7354L42.03 27.9916L41.0957 28.7354L42.03 29.9089ZM48.18 34.8052L47.2457 35.9787L48.18 36.7226L49.1143 35.9787L48.18 34.8052ZM54.33 29.9089L55.2643 28.7354L54.33 27.9916L53.3957 28.7354L54.33 29.9089ZM60.48 34.8052L59.5457 35.9787L61.98 37.9168V34.8052H60.48ZM31.0006 62.1646V63.6646H32.5006V62.1646H31.0006ZM14.5621 62.1646H13.0621V63.6646H14.5621V62.1646ZM31.0006 51.2866H32.5006V49.7866H31.0006V51.2866ZM14.5621 51.2866V49.7866H13.0621V51.2866H14.5621ZM35.88 3H60.48V0H35.88V3ZM37.38 34.8052V1.5H34.38V34.8052H37.38ZM41.0957 28.7354L34.9457 33.6317L36.8143 35.9787L42.9643 31.0824L41.0957 28.7354ZM49.1143 33.6317L42.9643 28.7354L41.0957 31.0824L47.2457 35.9787L49.1143 33.6317ZM53.3957 28.7354L47.2457 33.6317L49.1143 35.9787L55.2643 31.0824L53.3957 28.7354ZM61.4143 33.6317L55.2643 28.7354L53.3957 31.0824L59.5457 35.9787L61.4143 33.6317ZM58.98 1.5V34.8052H61.98V1.5H58.98ZM31.0006 60.6646H14.5621V63.6646H31.0006V60.6646ZM29.5006 51.2866V62.1646H32.5006V51.2866H29.5006ZM14.5621 52.7866H31.0006V49.7866H14.5621V52.7866ZM16.0621 62.1646V51.2866H13.0621V62.1646H16.0621Z"
+              fill="white" mask="url(#path-5-inside-1)"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M36.1621 1.5H60.1835V34.8052L54.1782 29.9433L48.1728 34.8052L42.1675 29.9433L36.1621 34.8052V1.5Z"
+              stroke="#333333" stroke-width="1.5"></path>
+            <rect x="31.0006" y="62.166" width="16.4385" height="10.878" transform="rotate(-180 31.0006 62.166)"
+              stroke="#333333" stroke-width="1.5"></rect>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M71.8595 54.2996H76.0595V50.0996H71.8595V54.2996Z"
+              stroke="#333333" stroke-width="1.5"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M71.8595 61.4988H76.0595V57.2988H71.8595V61.4988Z"
+              stroke="#333333" stroke-width="1.5"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M83.6101 54.2996H82.2343H80.2266H79.4101V50.0996H83.6101V54.2996Z" stroke="#333333"
+              stroke-width="1.5"></path>
+          </svg></div>
+        <h1 class="">Envío rápido y seguro</h1>
+        <p>Elegí Mercado Envíos y seguí tu compra hasta que la recibas. Todos tus paquetes estarán protegidos.</p>
+      </div>
+      <div class="info-slide">
+        <div class="img-container"><svg width="59" height="72" viewBox="0 0 59 72" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M1.46298 11.3319C1.29785 11.393 1.16312 11.4998 1.06906 11.6344C0.974904 11.7692 0.921472 11.9318 0.92199 12.1034L0.922001 35.1113C0.883975 43.5803 3.77393 51.513 8.74933 57.8381C13.7236 64.1618 20.7825 68.8787 29.4785 70.9178C37.7776 68.8787 44.8364 64.1618 49.8107 57.8381C54.7861 51.513 57.676 43.5803 57.638 35.1113V12.1111C57.6386 11.9318 57.5851 11.7692 57.491 11.6344C57.3969 11.4998 57.2622 11.393 57.1 11.333L29.597 1.12334C29.3913 1.05524 29.1688 1.05524 28.9631 1.12334L1.46298 11.3319Z"
+              fill="white"></path>
+            <path
+              d="M1.9812 12.1559L29.2674 1.97167C29.2757 1.9699 29.2843 1.9699 29.2926 1.97167L56.5788 12.1559L56.5788 35.1104L56.5788 35.1146C56.6157 43.3759 53.8123 51.1139 48.9841 57.2853C44.2009 63.3991 37.4319 67.9735 29.4725 69.9923C21.1261 67.973 14.3579 63.3976 9.57592 57.2853C4.74771 51.1139 1.9443 43.3759 1.98121 35.1146V35.1104L1.9812 12.1559ZM1.90918 12.1827C1.90886 12.1829 1.90854 12.183 1.90822 12.1831L1.90918 12.1827Z"
+              class="icon--custom-color" fill="#22277A" stroke="white" stroke-width="1.87818"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M1.47973 11.3029C1.3153 11.3641 1.18114 11.471 1.08748 11.6058C0.993721 11.7407 0.940516 11.9036 0.941031 12.0753L0.941043 35.1104C0.903177 43.5894 3.78089 51.5314 8.73522 57.8639C13.6884 64.1951 20.7174 68.9176 29.3766 70.959C37.6405 68.9176 44.6694 64.1951 49.6226 57.8639C54.577 51.5314 57.4547 43.5894 57.4168 35.1104V12.0831C57.4173 11.9036 57.3641 11.7407 57.2704 11.6058C57.1767 11.471 57.0426 11.3641 56.8811 11.304L29.4945 1.08239C29.2897 1.0142 29.0681 1.0142 28.8633 1.08239L1.47973 11.3029Z"
+              stroke="#333333" stroke-width="1.5"></path>
+            <ellipse cx="29.1789" cy="29.7292" rx="14.6081" ry="14.6081" fill="white" stroke="#333333"
+              stroke-width="1.5"></ellipse>
+            <path d="M24.5317 30.0514L27.6115 33.2568L34.1559 26.4453" stroke="#333333" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg></div>
+        <h1 class="">Compra Protegida</h1>
+        <p>Te acompañamos hasta que recibas lo que compraste. Y si no es lo que esperabas, te devolvemos el dinero.
+        </p>
+      </div>
+    </section>
+      
+    
+
+
+    <section class="product__container">
+
+
+      <div class="title">
+        <h3>Juguetes Para Tus Mascotas</h3>
+      </div>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" v-for="data in dataToys">
+            <div class="card">
+              <p class="stock" v-if="data.stock < 5">Solo {{data.stock}} unidades disponibles!</p>
+              <img v-bind:src="data.imagen" alt="" class="card-img">
+
+              <div class="card-description">
+                <p class="name">{{data.nombre}}</p>
+                <p class="description">
+                  {{(cheked.includes(data._id))?data.descripcion:data.descripcion.slice(0,120)+"..."}}
+                </p>
+                <input type="checkbox" name="" v-bind:id="data._id" v-model="cheked" v-bind:value="data._id"
+                  class="mostarMas">
+
+                <label v-bind:for="data._id" class="">{{(data.descripcion.length < 80
+                    )?"":(cheked.includes(data._id))?"Mostar menos":"Mostar mas"}}</label>
+
+              </div>
+              <div class="card-inputs">
+                <div class="price__container">
+                  <p class="price">${{data.precio}}</p>
+                </div>
+
+                <button class="addCart">Añadir al carrito</button>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi alias, optio dignissimos ipsum eius blanditiis
+        dolores aliquam sapiente perferendis saepe porro amet incidunt quisquam provident sed minus. Nam, delectus
+        explicabo!</p>
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- Vue -->
+  <script src="https://unpkg.com/vue@3"></script>
+  <script src="../Script/vue.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+        },
+      });
+  
+  </script>
+
+
 </body>
+
 </html>
