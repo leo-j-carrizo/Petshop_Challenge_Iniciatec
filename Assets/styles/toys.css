@@ -1,11 +1,69 @@
-.nav__container{
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+
+
+body{
     background-color: var(--first-color);
+    font-family: 'Roboto';
+    overflow: overlay;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+header{
+    display: flex;
+    background-color: var(--first-color);
+    height: 100px;
+}
+
+
+.logo__container{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Smooch';
+}
+.logo{
+    height: 100%;
+    padding: 20px;
+}
+
+
+.nav__container{
+    
     width: 100%;
-    height: 60px;
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex:1;
+}
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.user{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right:20px ;
 }
+
+.bx-cart{
+    font-size: 30px;
+    color: white;
+}
+
+
 
 .banner__container{
     background-color: var(--second-color);
@@ -16,58 +74,189 @@
     align-items: center;
 }
 
-.product__container{
-    width: 100%;
+.payment__container{
     
-
-    justify-content: center;
-    align-items: center;
-}
-
-.product__container-toys{
     width: 100%;
-    padding: 20px 40px;
+    background-color: white;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
 }
+
+.info-slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    padding: 50px;
+}
+
+.info-slide h1{
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.info-slide p{
+    font-size: .9rem;
+    
+}
+
+.margin{
+    border-right: 1px solid rgb(201, 201, 201);
+    border-left: 1px solid rgb(201, 201, 201) ;
+}
+
+.product__container{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
 
 .title{
     width: 100%;
     margin-bottom: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    
 }
 
+.title h3{
+
+    background-color: black;
+    padding: 30px;
+    border-radius: 0 0 20px 20px;
+    
+}
+
+
+
 .card{
-    border: 1px solid black;
+    border: none;
     width: 300px;
-    max-height: 500px;
+    padding: 15px;
+    background-color: var(--sixth-color);
+    border-radius: 150px 150px 20px 20px;
+    display:flex ;
+    flex-flow: column;
+    justify-self: flex-end;
+    
+    
+    
 }
 
 
 
 .card-img{
     width: 100%;
+    border-radius: 150px;
+    
 }
 
 .card-description{
-    padding:20px;
+    flex: 1;
+    margin: 10px 0;
+    color: white;
+    font-size: .7rem;
+    
 }
 
 .name{
-    margin-bottom: 10px;
+    height: 60px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform:capitalize;
+    display: flex;
+    align-items: center;
 }
 
 .card-inputs{
+    width: 100%;
     display: flex;
-    margin-top: 20px;
     justify-content: space-between;
+}
 
+.addCart{
+    color: white;
+    padding: 10px;
+    background-color: var(--second-color);
+    border-radius: 10px ;
+    border: none;
+    font-family: 'Roboto';
+}
+
+.price__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--fourth-color);
+    border-radius: 0 10px 0 10px;
+    
+}
+
+.price{
+    color: white;
+    font-size: 1.1rem;
 }
 
 .mostarMas{
     display: none;
 }
+
+footer{
+    height: 400px;
+    background-color: black;
+}
+
+
+
+.swiper{
+    padding-bottom:60px ;
+    
+}
+
+.swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+}
+
+.swiper-slide{
+    display: flex;
+    justify-content: center;
+    transition: all .4s ease;
+                 
+ }
+ 
+
+
+
+  
+
+.prod-img{
+    position: relative;
+}
+
+.stock{
+    color: white;
+    padding: 10px;
+    position: absolute;
+    background-color: red;
+    right: 0px;
+}
+
+
+
+
+
+  
+
 
 
 

@@ -10,4 +10,25 @@
     --third-color:#8366E3;
     --fourth-color:#B5A2F2;
     --fifth-color:#120342;
+    --sixth-color:#835FA9;
+    
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    opacity: 20%;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 20px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
