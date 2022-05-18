@@ -124,7 +124,8 @@ h3 {
 .tableAccesorios:hover {
   box-shadow: rgb(255, 255, 255) 0px 0px 40px;
   transition: 1.1s;
-  transform: translateX(10px);
+  transform:scale(1.5);
+  transform-origin:left center;
 }
 
 .radiusImg {
@@ -133,6 +134,7 @@ h3 {
   background-color: white;
   height: 150px;
   width: 150px;
+  z-index: 2;
 }
 
 .imgUno {
@@ -148,13 +150,13 @@ h3 {
 }
 
 .imgTres {
-  background-image: url("../images/imagenPez2.jpg");
+  background-image: url("../images/otraImagenPez.jpg");
   background-position: center;
   background-size: 200px;
 }
 
 .imgCuatro {
-  background-image: url("../images/ImagenLoro.jpg");
+  background-image: url("../images/otraImagenLoro.jpg");
   background-position: center;
   background-size: 200px;
 }
@@ -203,7 +205,7 @@ h3 {
   box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
   margin-bottom: 3%;
   color:#ffffff;
-  z-index: 99999999;
+  z-index: 1;
 }
 
 .socialBar:hover {
