@@ -7,12 +7,10 @@
 body{
     background-color: var(--first-color);
     font-family: 'Roboto';
-    overflow: overlay;
+    
 }
 
-a{
-    text-decoration: none;
-}
+
 
 p,h1,h2,h3,h4,h5,h6{
     margin: 0;
@@ -259,148 +257,6 @@ header{
     right: 0px;
     top: 0px;
     border-radius: 0 10px 0 0px;
-}
-
-/* footer */
-
-.payment {
-    width: 100%;
-    background-color: #f8f8f8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 50px;
-}
-.info {
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-}
-.info_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 1300px;
-    margin: 0 30px;
-}
-.links {
-    display: flex;
-    justify-self: center;
-    flex-wrap: wrap;
-    padding: 30px 0 20px 0;
-    margin-bottom: 30px;
-    border-bottom: 1px solid white;
-}
-.links ul {
-    padding: 0 60px 0 0;
-}
-.links ul li {
-    list-style: none;
-}
-.links ul li a {
-    font-family: 'Roboto';
-    font-weight: 300;
-    color: white;
-    font-size: 0.9rem;
-}
-.links ul li a:hover {
-    color: white;
-}
-.links--title{
-    color: white;
-}
-
-.links--title, .social button {
-    font-family: 'Roboto';
-    font-weight: 600;
-}
-.social {
-    padding: 0 60px 0 0;
-    margin-bottom: 20px;
-}
-.social button {
-    background: transparent;
-    color: white;
-    border: 1px solid white;
-    padding: 10px;
-    font-size: 0.7rem;
-    transition: 0.5s;
-}
-.social button:hover {
-    background: white;
-    border: 1px solid white;
-}
-.social h4 {
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 1.05rem;
-    margin-bottom: 20px;
-}
-.social img {
-    height: 40px;
-}
-.social_iconos {
-    display: flex;
-}
-.social_iconos img {
-    width: 40px;
-    margin-right: 10px;
-}
-
-.socialIcons{
-    color: white;
-    font-size: 40px;
-}
-.partner {
-    margin-bottom: 10px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid white;
-}
-.partner h4 {
-    font-family: 'Roboto';
-    font-weight: 600;
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.partner-img {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.partner-img img {
-    height: 90px;
-    margin-right: 20px;
-    margin-bottom: 30px;
-}
-
-.bigImg{
-    padding: 25px;
-}
-.copyright {
-    text-align: center;
-}
-.copyright p {
-    font-family: 'Roboto';
-    font-weight: 300;
-    color: white;
-    font-size: 0.9rem;
-}
-.copyright a {
-    font-family: 'Roboto';
-    font-weight: 300;
-    color: white;
-    font-size: 0.9rem;
-}
-.copyright a:hover {
-    color: white;
-}
-@media (max-width: 1359px) {
-    footer {
-        width: 100vw;
-   }
 }
 
 .stockCounter{
