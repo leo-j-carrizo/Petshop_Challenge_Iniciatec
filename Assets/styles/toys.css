@@ -93,6 +93,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--first-color);
+    background-image: url(../img/toys/wave-haikeibotom.svg);
+    background-repeat: no-repeat;
+    color: white;
+    padding: 350px 0 250px 0;
+    
 }
 
 .info-slide{
