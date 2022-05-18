@@ -6,26 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> 
-    <link rel="stylesheet" href="../Assets/styles/main.css">
-     <link rel="stylesheet" href="../Assets/styles/toys.css">
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<!--     <link rel="stylesheet" href="../Assets/styles/main.css">
+    <link rel="stylesheet" href="../Assets/styles/toys.css"> -->
+    <link rel="stylesheet" href="../Assets/styles/footer.css">
+    <link rel="stylesheet" href="../Assets/styles/contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  
 
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-color #004c00">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="/Petshop_Challenge_Iniciatec/images/logo3.svg" alt="" width="60" height="48" class="d-inline-block align-text-top">
-                    Franco Pet-Shop
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid ">
+                <a class="navbar-brand d-flex justify-content-center" href="#">
+                    <img src="../Assets/img/nav/logo3.svg" alt="" width="60" height="48" class="d-inline-block align-text-top">
+                    <h1>Franco Petshop</h1>
                 </a>
             </div>
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">inicio</a>
+                <a class="navbar-brand" href="#">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                
                 <div class="collapse navbar-collapse col-12" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -35,22 +39,28 @@
                         <a class="nav-link" href="#">Farmacia</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link ">contacto</a>
+                        <a class="nav-link ">Contacto</a>
                         </li>
                     </ul>
-                </div>
-            </div>
 
+                </div>
+            
+            </div>
+            <div class="container-fluid">
+                <a href=""><i class='bx bx-cart'></i></a>
+            </div>
         </nav>
     </header>
     
 
     <main>
+
         <section class="d-flex justify-content-center align-items-center">
-            <div class="card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4 p-4"> 
+
+            <div class="card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4 p-4" >
+                <h6> Dejanos tus nomentarios y sujerencias para mejorar muestro servicio </h6>
                 <div class="mb-4 d-flex justify-content-start align-items-center">
-                
-                    <h4> Contacto</h4>
+                    <h3> Contacto</h3>
                 </div>
                 <div class="mb-1">
                     <form id = "contacto" >
@@ -86,8 +96,8 @@
                         </div> 
                         
                         <div class="mb-2">
-                            <button id ="botton" class="col-12 btn btn-primary d-flex justify-content-between ">
-                                <span>Enviar </span><i id="icono" class="bi bi-cursor-fill "></i>
+                            <button id ="botton" class="col-12 btn btn-primary d-flex justify-content-between " type="submit">
+                                <span>Enviar </span>
                             </button>
                         </div> 
                     </form>
@@ -97,13 +107,13 @@
 
         <footer>
             <div class="payment">
-              <img src="../Assets/img/payment/1.png" alt="visa">
-              <img src="../Assets/img/payment/2.png" alt="mastercard">
-              <img src="../Assets/img/payment/22.png" alt="paypal">
-              <img src="../Assets/img/payment/5.png" alt="amazon">
-              <img src="../Assets/img/payment/12.png" alt="skrill">
-              <img src="../Assets/img/payment/17.png" alt="ebay">
-              <img src="../Assets/img/payment/8.png" alt="american">
+              <img src="../Assets/img/footer/1.png" alt="visa">
+              <img src="../Assets/img/footer/2.png" alt="mastercard">
+              <img src="../Assets/img/footer/22.png" alt="paypal">
+              <img src="../Assets/img/footer/5.png" alt="amazon">
+              <img src="../Assets/img/footer/12.png" alt="skrill">
+              <img src="../Assets/img/footer/17.png" alt="ebay">
+              <img src="../Assets/img/footer/8.png" alt="american">
             </div>
             <div class="info">
               <div class="info_content">
@@ -147,7 +157,7 @@
                   </div>
                   <div class="social">
                     <h4 class="links--title">Mira nuestras reviews en</h4>
-                    <img src="../Assets/img/trustpilot-logo.png" alt="trustpilot">
+                    <img src="../Assets/img/footer/trustpilot-logo.png" alt="trustpilot">
                   </div>
                 </div>
                 <div class="partner">
@@ -193,5 +203,11 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script></script>
+    <script>
+        const formulario = document.getElementById("contacto")
+        formulario.addEventListener("submit", (e) =>{
+            alert("El formulario fue completado con exito")
+        } )
+    </script>
 </body>
 </html>
