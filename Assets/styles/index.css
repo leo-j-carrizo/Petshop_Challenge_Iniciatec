@@ -19,7 +19,8 @@ html {
 }
 
 .bgimg-1 {
-  background-image: url("../images/imagen-1.jpeg");
+  
+  background-image: url("../img/index/imagen-1.jpeg");
   min-height: 100%;
 
   display: flex;
@@ -29,7 +30,7 @@ html {
 }
 
 .bgimg-2 {
-  background-image: url("../images/imagenParoramicaGato.jpg");
+  background-image: url("../img/index/imagenParoramicaGato.jpg");
   min-height: 400px;
 
   display: flex;
@@ -39,7 +40,7 @@ html {
 }
 
 .bgimg-3 {
-  background-image: url("../images/imagen-3.jpeg");
+  background-image: url("../img/index/imagen-3.jpeg");
   min-height: 400px;
 
   display: flex;
@@ -49,7 +50,7 @@ html {
 }
 
 .bgimg-4 {
-  background-image: url("../images/imagen-1.jpeg");
+  background-image: url("../img/index/imagen-1.jpeg");
   min-height: 100%;
 }
 
@@ -138,25 +139,25 @@ h3 {
 }
 
 .imgUno {
-  background-image: url("../images/imagenHamster.jpg");
+  background-image: url("../img/index/imagenHamster.jpg");
   background-position: center;
   background-size: 200px;
 }
 
 .imgDos {
-  background-image: url("../images/imagenConejo.jpg");
+  background-image: url("../img/index/imagenConejo.jpg");
   background-position: center;
   background-size: 200px;
 }
 
 .imgTres {
-  background-image: url("../images/otraImagenPez.jpg");
+  background-image: url("../img/index/otraImagenPez.jpg");
   background-position: center;
   background-size: 200px;
 }
 
 .imgCuatro {
-  background-image: url("../images/otraImagenLoro.jpg");
+  background-image: url("../img/index/otraImagenLoro.jpg");
   background-position: center;
   background-size: 200px;
 }
