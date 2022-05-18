@@ -1,61 +1,221 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    font: 400 15px/1.8 "Lato", sans-serif;
-    color: #777;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4 {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("../images/imagen-1.jpeg");
+  min-height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.bgimg-2 {
+  background-image: url("../images/imagenParoramicaGato.jpg");
+  min-height: 400px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bgimg-3 {
+  background-image: url("../images/imagen-3.jpeg");
+  min-height: 400px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bgimg-4 {
+  background-image: url("../images/imagen-1.jpeg");
+  min-height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.captionTop {
+  position: absolute;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.captionBottom {
+  position: absolute;
+  left: 0;
+  top: 85%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.captionTop span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.captionBottom span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.tableAccesorios {
+  font-size: large;
+  color: #000;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding:10px;
+}
+
+.tableAccesorios:hover {
+  box-shadow: rgb(255, 255, 255) 0px 0px 40px;
+  transition: 1.1s;
+  transform:scale(1.5);
+  transform-origin:left center;
+}
+
+.radiusImg {
+  border-radius: 100%;
+  object-fit: contain;
+  background-color: white;
+  height: 150px;
+  width: 150px;
+  z-index: 2;
+}
+
+.imgUno {
+  background-image: url("../images/imagenHamster.jpg");
+  background-position: center;
+  background-size: 200px;
+}
+
+.imgDos {
+  background-image: url("../images/imagenConejo.jpg");
+  background-position: center;
+  background-size: 200px;
+}
+
+.imgTres {
+  background-image: url("../images/otraImagenPez.jpg");
+  background-position: center;
+  background-size: 200px;
+}
+
+.imgCuatro {
+  background-image: url("../images/otraImagenLoro.jpg");
+  background-position: center;
+  background-size: 200px;
+}
+
+.radiusImg:hover {
+  box-shadow: rgb(255, 255, 255) 0px 0px 40px;
+  transition: 1.1s;
+  transform: scale(1.5);
+}
+
+.bottomImgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3,
+  .bgimg-4 {
+    background-attachment: scroll;
   }
-  
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    position: relative;
-    opacity: 0.65;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-  }
-  .bgimg-1 {
-    background-image: url("/images/imagen-1.jpeg");
-    min-height: 100%;
-  }
-  
-  .bgimg-2 {
-    background-image: url("/images/imagen-2.jpeg");
-    min-height: 400px;
-  }
-  
-  .bgimg-3 {
-    background-image: url("/images/imagen-3.jpeg");
-    min-height: 400px;
-  }
-  
-  .caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-  }
-  
-  .caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
-  }
-  
-  h3 {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font: 20px "Lato", sans-serif;
-    color: #111;
-  }
-  
-  /* Turn off parallax scrolling for tablets and phones */
-  @media only screen and (max-device-width: 1024px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-      background-attachment: scroll;
-    }
-  }
+}
+
+
+.socialBar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  align-content: flex-start;
+  position: fixed;
+  top: 100px;
+  left: 93%;
+  height: 270px;
+  width: 70px;
+  margin-right: 5%;
+  border: solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 3%;
+  color:#ffffff;
+  z-index: 1;
+}
+
+.socialBar:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.socialElement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  background-color: #ffffff;
+}
