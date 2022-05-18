@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --first-color: #45396B;
+  --second-color: #5E42B8 ;
+  --third-color:#8366E3;
+  --fourth-color:#B5A2F2;
+  --fifth-color:#120342;
+  --sixth-color:#835FA9;
+  
+}
+
+header{
+
+  background-color: var(--first-color);
+}
+section{
+  background-color: var(--first-color);
+}
+
+

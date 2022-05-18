@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<!--     <link rel="stylesheet" href="../Assets/styles/main.css">
+    <link rel="stylesheet" href="../Assets/styles/toys.css"> -->
+    <link rel="stylesheet" href="../Assets/styles/footer.css">
+    <link rel="stylesheet" href="../Assets/styles/contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid ">
+                <a class="navbar-brand d-flex justify-content-center" href="#">
+                    <img src="../Assets/img/nav/logo3.svg" alt="" width="60" height="48" class="d-inline-block align-text-top">
+                    <h1>Franco Petshop</h1>
+                </a>
+            </div>
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse col-12" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Jugueteria</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Farmacia</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link ">Contacto</a>
+                        </li>
+                    </ul>
+
+                </div>
+            
+            </div>
+            <div class="container-fluid">
+                <a href=""><i class='bx bx-cart'></i></a>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+
+        <section class="d-flex justify-content-center align-items-center">
+
+            <div class="card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4 p-4" >
+                <h6> Dejanos tus nomentarios y sujerencias para mejorar muestro servicio </h6>
+                <div class="mb-4 d-flex justify-content-start align-items-center">
+                    <h3> Contacto</h3>
+                </div>
+                <div class="mb-1">
+                    <form id = "contacto" >
+                        <div class="mb-4 d-flex justify-content-between"> 
+                            <div>
+                                <label for="nombre"> <i class="bi bi-person-fill"></i> Nombre</label>
+                                <input type="text" class="form-control" name="nombre" id="nombre" placeholder= "ej: Franco" required>
+                                
+                            </div>
+                            <div >
+                                <label for="apellido"> <i class="bi bi-person-bounding-box"></i> Apellido</label>
+                                <input type="text" class="form-control" name="apellido" id="apellido" placeholder= "ej: Petshop" required>
+                                
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="correo"><i class="bi bi-envelope-fill"></i> Correo</label>
+                            <input type="email" class="form-control" name="correo" id="correo" placeholder= "ej: franco.petshot@mail.com" required>
+                        </div> 
+                        <div class="mb-4">
+                            <label for="telefono"><i class="bi bi-envelope-fill"></i> Telefono</label>
+                            <input type="text" class="form-control" name="correo" id="telefono" placeholder= "11-34567866" required>
+                        </div> 
+                        <div class="mb-4 ">
+                            <label for="mascota"><i class="bi bi-gender-ambiguous"></i> Mascota: </label>
+                            <input type="radio" class="form-check-input"  name="mascota"  value="perro" > Perro
+                            <input type="radio" class="form-check-input" name="mascota"  value="gato" > Gato
+                            <input type="radio" class="form-check-input" name="mascota" value="otros"> Otros
+                        </div>  
+                        <div class="mb-4">
+                            <label for="comentario"> <i class="bi bi-chat-right-dots-fill" required></i> Conentario</label>
+                            <textarea name="comentario" id="comentario" class="form-control" placeholder="ej: hola"></textarea>
+                        </div> 
+                        
+                        <div class="mb-2">
+                            <button id ="botton" class="col-12 btn btn-primary d-flex justify-content-between " type="submit">
+                                <span>Enviar </span>
+                            </button>
+                        </div> 
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="payment">
+              <img src="../Assets/img/footer/1.png" alt="visa">
+              <img src="../Assets/img/footer/2.png" alt="mastercard">
+              <img src="../Assets/img/footer/22.png" alt="paypal">
+              <img src="../Assets/img/footer/5.png" alt="amazon">
+              <img src="../Assets/img/footer/12.png" alt="skrill">
+              <img src="../Assets/img/footer/17.png" alt="ebay">
+              <img src="../Assets/img/footer/8.png" alt="american">
+            </div>
+            <div class="info">
+              <div class="info_content">
+                <div class="links">
+                  <ul>
+                    <li class="links--title">Sobre Franco</li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Nuestro equipo</a></li>
+                    <li><a href="#">Contactanos</a></li>
+                  </ul>
+                  <ul>
+                    <li class="links--title">Comprar</li>
+                    <li><a href="#">Como comprar</a></li>
+                    <li><a href="#">Lista de productos</a></li>
+                    <li><a href="#">Combos</a></li>
+                    <li><a href="#">Tienda</a></li>
+                  </ul>
+                  <ul>
+                    <li class="links--title">Ayuda</li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Envios</a></li>
+                    <li><a href="#">Crear un ticket</a></li>
+                  </ul>
+                  <ul>
+                    <li class="links--title">Comunidad</li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Sorteos</a></li>
+                  </ul>
+                  <div class="social">
+                    <h4 class="links--title">Siguenos</h4>
+                    <div class="social_iconos">
+                      <a href="#"><i class='bx bxl-facebook-square socialIcons'></i></a>
+                      <a href="#"><i class='bx bxl-instagram socialIcons'></i></a>
+                      <a href="#"><i class='bx bxl-twitter socialIcons'></i></a>
+                      <a href="#"><i class='bx bxl-whatsapp socialIcons' ></i></a>
+                    </div>
+                  </div>
+                  <div class="social">
+                    <h4 class="links--title">Negocios</h4>
+                    <button>Vende con nosotros</button>
+                  </div>
+                  <div class="social">
+                    <h4 class="links--title">Mira nuestras reviews en</h4>
+                    <img src="../Assets/img/footer/trustpilot-logo.png" alt="trustpilot">
+                  </div>
+                </div>
+                <div class="partner">
+                  <h4 class="links--title">A PROUD PARTNER OF</h4>
+                  <div class="partner-img">
+                    <img src="https://logodownload.org/wp-content/uploads/2019/09/pedigree-logo-6.png" alt="pedigree">
+                    <img src="https://d1tb96bxe9n9p5.cloudfront.net/logo--primary.svg?v=8-9-0" alt="eukanuba" class="bigImg">
+                    <img src="https://logodownload.org/wp-content/uploads/2018/09/purina-logo.png" alt="purina" class="bigImg">
+                    <img src="https://logodownload.org/wp-content/uploads/2018/09/royal-canin-logo.png" alt="royal canin" class="bigImg">
+                    <img src="https://www.vitalcan.com/wp-content/uploads/2021/03/vitalcan-logo-@2x.png" alt="vitalcan">
+                    
+                  </div>
+                </div>
+                <div class="copyright">
+                  <p>Copyright © 2020 Franco Petshop. All Rights Reserved. <a href="#">Terms and Conditions</a>, <a href="#">Privacy
+                      policy</a>, <a href="#">Cookie preferences</a></p>
+                </div>
+              </div>
+            </div>
+          </footer>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script></script>
+    <script>
+        const formulario = document.getElementById("contacto")
+        formulario.addEventListener("submit", (e) =>{
+            alert("El formulario fue completado con exito")
+        } )
+    </script>
+</body>
+</html>
