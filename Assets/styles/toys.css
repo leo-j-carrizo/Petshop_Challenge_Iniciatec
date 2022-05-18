@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 
 body{
     background-color: var(--first-color);
-    font-family: 'Roboto';
+    font-family: 'Quicksand';
     
 }
 
@@ -20,6 +21,7 @@ header{
     display: flex;
     background-color: var(--first-color);
     height: 100px;
+    padding-right: 10px;
 }
 
 
@@ -28,13 +30,18 @@ header{
     color: white;
     justify-content: center;
     align-items: center;
-    font-family: 'Smooch';
+    font-weight: 900;
 }
 .logo{
     height: 100%;
     padding: 20px;
 }
 
+.logo__container h1{
+    font-weight: 400;
+    
+    font-family: 'Smooch';
+}
 
 .nav__container{
     
@@ -44,9 +51,12 @@ header{
     justify-content: flex-end;
     align-items: center;
     flex:1;
+    
 }
 .nav-link{
     color: white;
+    font-weight:700 ;
+    font-size: 1.2rem;
 }
 
 .nav-link:hover{
@@ -57,11 +67,11 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right:20px ;
+    padding: 0 16px;
 }
 
 .bx-cart{
-    font-size: 30px;
+    font-size: 2.5rem;
     color: white;
 }
 
@@ -111,9 +121,11 @@ header{
 }
 
 .product__container{
+    padding: 0 100px;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
+    background-color: var(--sixth-color);
     
     
 }
@@ -122,7 +134,7 @@ header{
 
 .title{
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: white;
     display: flex;
     justify-content: center;
@@ -133,7 +145,7 @@ header{
 
     background-color: black;
     padding: 30px;
-    border-radius: 0 0 20px 20px;
+    border-radius: 20px 20px 20px 20px;
     
 }
 
@@ -143,11 +155,14 @@ header{
     border: none;
     width: 300px;
     padding: 15px;
-    background-color: var(--sixth-color);
+    background-color: var(--first-color);
     border-radius: 10px;
     display:flex ;
     flex-flow: column;
     justify-self: flex-end;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
     
     
     
@@ -207,6 +222,7 @@ header{
 .price{
     color: white;
     font-size: 1.1rem;
+    font-weight: 700;
     
 }
 
@@ -262,11 +278,51 @@ header{
 .stockCounter{
     width: 60px;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 
+.diapo{
+    width: 100%;
+    height: 850px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
 
+.diapo__text{
+    max-width: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.diapo h2{
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom:20px ;
+}
 
+.diapo p{
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: justify;
+}
+
+.d1{
+    background-image: url(../img/toys/bannerBack2.svg);
+}
+
+.d2{
+    background-image: url(../img/toys/blob-scene-haikei.svg);
+}
 
 
   

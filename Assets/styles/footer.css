@@ -11,7 +11,7 @@
 }
 .info {
     width: 100%;
-    background-color: black;
+    background-color: var(--seventh-color);
     display: flex;
     justify-content: center;
 }
@@ -41,20 +41,22 @@
     font-weight: 300;
     color: white;
     font-size: 0.9rem;
+    transition: 500ms;
 }
 .links ul li a:hover {
-    color: white;
+    color: var(--sixth-color);
+    transition: 500ms;
 }
 .links--title{
     color: white;
+    font-weight: 900;
 }
 
-.links--title, .social button {
-    font-family: 'Roboto';
+.social button {
     font-weight: 600;
 }
-.social {
-    padding: 0 60px 0 0;
+.social{
+    padding: 0 50px 0 0;
     margin-bottom: 20px;
 }
 .social button {
@@ -66,12 +68,11 @@
     transition: 0.5s;
 }
 .social button:hover {
-    background: white;
+    background: var(--sixth-color);
     border: 1px solid white;
+    transition: 500ms;
 }
 .social h4 {
-    font-family: 'Roboto';
-    font-weight: 500;
     font-size: 1.05rem;
     margin-bottom: 20px;
 }
@@ -89,7 +90,16 @@
 .socialIcons{
     color: white;
     font-size: 40px;
+    transition: 500ms;
 }
+
+.socialIcons:hover{
+    color: var(--sixth-color);
+    font-size: 60px;
+    transition: 500ms;
+
+}
+
 .partner {
     margin-bottom: 10px;
     padding-bottom: 30px;
