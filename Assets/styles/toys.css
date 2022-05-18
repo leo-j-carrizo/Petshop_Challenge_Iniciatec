@@ -1,8 +1,5 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 
 
 body{
@@ -38,9 +35,11 @@ header{
 }
 
 .logo__container h1{
-    font-weight: 400;
+    font-size: 3rem;
+    font-weight: 700;
     
     font-family: 'Smooch';
+    font-family: 'Quicksand';
 }
 
 .nav__container{
@@ -121,7 +120,7 @@ header{
 }
 
 .product__container{
-    padding: 0 100px;
+    padding: 50px 100px;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
