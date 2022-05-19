@@ -1,3 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body,
 html {
   height: 100%;
@@ -219,4 +226,22 @@ h3 {
   justify-content: space-between;
   margin-top: 10px;
   background-color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+  .socialBar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .captionTop span.border {
+    font-size: 1em;
+  }
+  .caption span.border{
+    font-size: 1em;
+  }
+  .captionBottom span.border{
+    font-size: 1em;
+  }
 }
