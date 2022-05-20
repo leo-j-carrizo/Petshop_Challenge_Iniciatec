@@ -231,6 +231,7 @@
                  emailjs.sendForm('service_fden75r', 'template_yhcapec', this)
                      .then(function() {
                          console.log('SUCCESS!');
+                         document.location.reload(true);
                      }, function(error) {
                          console.log('FAILED...', error);
                      });
