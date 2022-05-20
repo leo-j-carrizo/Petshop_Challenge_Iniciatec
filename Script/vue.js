@@ -31,3 +31,20 @@ Vue.createApp({
 
     }
 }).mount('#app')
+
+/////////////////////////////////////////////////////////////////////////////////
+
+const btn = document.getElementById('botton');
+
+btn.addEventListener('click', function handleClick(event) {
+  // 👇️ if you are submitting a form (prevents page reload)
+  event.preventDefault();
+
+  const firstNameInput = document.getElementById('nombre');
+
+  // Send value to server
+  console.log(firstNameInput.value);
+
+  // 👇️ clear input field
+  firstNameInput.value = '';
+});
