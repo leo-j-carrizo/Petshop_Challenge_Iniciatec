@@ -13,3 +13,14 @@ section{
   background-color: var(--sixth-color);
 }
 
+.formulario_s{
+  padding-top: 25px;
+  padding-bottom: 50px ;
+}
+.mapa_s{
+  padding: 50px 0;
+}
+
+iframe{
+  max-width: 100%;
+}
