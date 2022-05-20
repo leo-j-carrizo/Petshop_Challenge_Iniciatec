@@ -16,15 +16,16 @@
     background-color: var(--seventh-color);
     display: flex;
     justify-content: center;
+    padding: 0 30px;
 }
 .info_content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 1300px;
-    margin: 0 30px;
 }
 .links {
+    width: 100%;
     display: flex;
     justify-self: center;
     flex-wrap: wrap;
@@ -121,8 +122,7 @@
 }
 .partner-img img {
     height: 90px;
-    margin-right: 20px;
-    margin-bottom: 30px;
+    
 }
 
 .bigImg{
@@ -150,4 +150,15 @@
     footer {
         width: 100vw;
    }
+}
+
+@media (max-width: 434px) {
+    .partner-img img{
+        
+        height: auto;
+        max-height: 90px;
+        max-width: 100%;
+
+    }
+
 }

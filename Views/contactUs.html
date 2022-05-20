@@ -14,50 +14,67 @@
     <link rel="stylesheet" href="../Assets/styles/contact.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../Assets/styles/footer.css">
+    <link rel="stylesheet" href="../Assets/styles/nav.css">
   
 
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-            <div class="container-fluid ">
-                <a class="navbar-brand d-flex justify-content-center" href="/Petshop_Challenge_Iniciatec/Views/index.html">
-                    <img src="../Assets/img/nav/logo3.svg" alt="" width="60" height="48" class="d-inline-block align-text-top">
-                    <h1>Franco Petshop</h1>
-                </a>
-            </div>
-            <div class="container-fluid">
-                <a class="navbar-brand" href="../Views/index.html">Inicio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse col-12" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../Views/toys.html">Jugueteria</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="../Views/pharmacy.html">Farmacia</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="../Views/contactUs.html">Contacto</a>
-                        </li>
-                    </ul>
-
-                </div>
-            
-            </div>
-            <div class="container-fluid">
-                <a href=""><i class='bx bx-cart'></i></a>
-            </div>
+    <header class="wide-view">
+        <div class="logo__container">
+          <img src="../Assets/img/nav/logo3.svg" alt="" class="logo">
+  
+          <h1 class="logo-name">Franco Petshop</h1>
+  
+        </div>
+        
+          
+  
+        
+        <nav class="nav__container">
+          <ul class="nav">
+            <li><a href="./index.html" class="nav-link">Inicio</a></li>
+            <li><a href="./toys.html" class="nav-link">Jugueteria</a></li>
+            <li><a href="./pharmacy.html" class="nav-link">Farmacia</a></li>
+            <li><a href="./contactUs.html" class="nav-link">Contactanos</a></li>
+          </ul>
         </nav>
-    </header>
+        <div class="user">
+          <i class='bx bx-cart'></i>
+        </div>
+  
+  
+  
+      </header>
+  
+      <!-- Header mobile -->
+      <div class="toggle">
+        <div class="logo__container">
+          <img src="../Assets/img/nav/logo3.svg" alt="" class="logo">
+    
+          <h1 class="logo-name">Franco Petshop</h1>
+    
+        </div>
+        
+          <input id="nav-toggle" type="checkbox">
+          <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+        
+      
+        <ul class="links-nav">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./toys.html">Jugueteria</a></li>
+          <li><a href="./pharmacy.html">Farmacia</a></li>
+          <li><a href="./contactUs.html">Contactanos</a></li>
+        </ul>
+      </div>
     
 
     <main>
 
-        <section class="d-flex justify-content-center align-items-center">
+        <section class="d-flex justify-content-center align-items-center formulario_s">
 
             <div class="card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4 p-4" >
                 <h6> Dejanos tus comentarios y sugerencias para mejorar nuestro servicio </h6>
@@ -106,7 +123,7 @@
                 </div>
             </div>
         </section>
-        <section class="d-flex justify-content-center align-items-center flex-column map ">
+        <section class="d-flex justify-content-center align-items-center flex-column map mapa_s">
           <h5>Acercate a nuestro local ubicado en Caballto </h5>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.686925810959!2d-58.43257238447499!3d-34.61207738045724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca429815227f%3A0x5d302e497c2cda87!2sR%C3%ADo%20de%20Janeiro%20300%2C%20C1405CCB%20CABA!5e0!3m2!1ses-419!2sar!4v1652992820269!5m2!1ses-419!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </section>
@@ -126,49 +143,40 @@
           
             </div>
         </div>
-        <div class="info">
-          <div class="info_content">
-            <div class="links">
-              <ul>
-                <li class="links--title">Sobre Franco</li>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Nuestro equipo</a></li>
-                <li><a href="#">Contactanos</a></li>
-              </ul>
-              <ul>
-                <li class="links--title">Comprar</li>
-                <li><a href="#">Como comprar</a></li>
-                <li><a href="#">Lista de productos</a></li>
-                <li><a href="#">Combos</a></li>
-                <li><a href="#">Tienda</a></li>
-              </ul>
-              <ul>
-                <li class="links--title">Ayuda</li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Envios</a></li>
-                <li><a href="#">Crear un ticket</a></li>
-              </ul>
-              <ul>
-                <li class="links--title">Comunidad</li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Sorteos</a></li>
-              </ul>
-              <div class="social">
-                <h4 class="links--title">Siguenos</h4>
-                <div class="social_iconos">
-                  <a href="#"><i class='bx bxl-facebook-square socialIcons'></i></a>
-                  <a href="#"><i class='bx bxl-instagram socialIcons'></i></a>
-                  <a href="#"><i class='bx bxl-twitter socialIcons'></i></a>
-                  <a href="#"><i class='bx bxl-whatsapp socialIcons' ></i></a>
-                </div>
-              </div>
-              <div class="social">
-                <h4 class="links--title">Negocios</h4>
-                <button>Vende con nosotros</button>
-              </div>
-              <div class="social">
-                <h4 class="links--title">Mira nuestras reviews en</h4>
-                <img src="../Assets/img/footer/trustpilot-logo.png" alt="trustpilot">
+      <div class="info">
+        <div class="info_content">
+          <div class="links">
+            <ul>
+              <li class="links--title">Sobre Franco</li>
+              <li><a href="#">Sobre nosotros</a></li>
+              <li><a href="#">Nuestro equipo</a></li>
+              <li><a href="#">Contactanos</a></li>
+            </ul>
+            <ul>
+              <li class="links--title">Comprar</li>
+              <li><a href="#">Como comprar</a></li>
+              <li><a href="#">Lista de productos</a></li>
+              <li><a href="#">Combos</a></li>
+              <li><a href="#">Tienda</a></li>
+            </ul>
+            <ul>
+              <li class="links--title">Ayuda</li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Envios</a></li>
+              <li><a href="#">Crear un ticket</a></li>
+            </ul>
+            <ul>
+              <li class="links--title">Comunidad</li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Sorteos</a></li>
+            </ul>
+            <div class="social">
+              <h4 class="links--title">Siguenos</h4>
+              <div class="social_iconos">
+                <a href="#"><i class='bx bxl-facebook-square socialIcons'></i></a>
+                <a href="#"><i class='bx bxl-instagram socialIcons'></i></a>
+                <a href="#"><i class='bx bxl-twitter socialIcons'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp socialIcons' ></i></a>
               </div>
             </div>
             <div class="partner">
