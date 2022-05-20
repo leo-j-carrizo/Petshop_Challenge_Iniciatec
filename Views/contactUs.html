@@ -199,35 +199,37 @@
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script></script>
+
     <script>
-        const formulario = document.getElementById("contacto")
-        formulario.addEventListener("submit", (e) =>{
-            alert("El formulario fue completado con exito")
-        } )
-    </script>
-     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-     <script type="text/javascript">
-         (function() {
-             // https://dashboard.emailjs.com/admin/account
-             emailjs.init('ZmNmYNY9NF1rqAvAx');
-         })();
-     </script>
-     <script type="text/javascript">
-         window.onload = function() {
-             document.getElementById('contacto').addEventListener('submit', function(event) {
-                 event.preventDefault();
-                 // generate a five digit number for the contact_number variable
-                //  this.contact_number.value = Math.random() * 100000 | 0;
-                 // these IDs from the previous steps
-                 emailjs.sendForm('service_fden75r', 'template_yhcapec', this)
-                     .then(function() {
-                         console.log('SUCCESS!');
-                     }, function(error) {
-                         console.log('FAILED...', error);
-                     });
-             });
-         }
-     </script>
-           <script src="../Script/vue.js"></script>
+      const formulario = document.getElementById("contacto")
+      formulario.addEventListener("submit", (e) =>{
+          alert("El formulario fue completado con exito")
+      } )
+  </script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   <script type="text/javascript">
+       (function() {
+           // https://dashboard.emailjs.com/admin/account
+           emailjs.init('ZmNmYNY9NF1rqAvAx');
+       })();
+   </script>
+   <script type="text/javascript">
+       window.onload = function() {
+           document.getElementById('contacto').addEventListener('submit', function(event) {
+               event.preventDefault();
+               // generate a five digit number for the contact_number variable
+              //  this.contact_number.value = Math.random() * 100000 | 0;
+               // these IDs from the previous steps
+               emailjs.sendForm('service_fden75r', 'template_yhcapec', this)
+                   .then(function() {
+                       console.log('SUCCESS!');
+                        document.location.reload(true);
+                   }, function(error) {
+                       console.log('FAILED...', error);
+                   });
+           });
+       }
+   </script>
+
 </body>
 </html>
