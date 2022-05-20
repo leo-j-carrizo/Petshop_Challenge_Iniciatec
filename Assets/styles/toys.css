@@ -107,6 +107,7 @@ p,h1,h2,h3,h4,h5,h6{
 .card-img{
     width: 100%;
     border-radius: 10px;
+    max-height: 270px;
     
 }
 
@@ -208,6 +209,10 @@ input::-webkit-inner-spin-button {
     
 }
 
+.diapo img{
+    height: 350px;
+}
+
 .diapo__text{
     max-width: 75vw;
     display: flex;
@@ -215,6 +220,7 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex: 1;
 }
 
 .diapo h2{
@@ -230,13 +236,21 @@ input::-webkit-inner-spin-button {
 }
 
 .d1{
+    background-color: var(--first-color);
     background-image: url(../img/toys/bannerBack2.svg);
     overflow: hidden;
     background-position: bottom;
+    background-repeat: no-repeat;
 }
 
+
+
 .d2{
+    background-color: var(--first-color);
     background-image: url(../img/toys/stacked-waves-haikei.svg);
+    overflow: hidden;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .merca{
@@ -251,6 +265,18 @@ input::-webkit-inner-spin-button {
 .back-movil{
     display: none;
 }
+
+
+@media (max-width: 945px){
+    .diapo__text h2{
+        font-size: 8vw;
+    }
+    .diapo__text p{
+        font-size: 4vw;
+    }
+
+}
+
   
 @media (max-width: 570px){
     .payment__container{
@@ -273,16 +299,34 @@ input::-webkit-inner-spin-button {
         
         
     }
-    .diapo__text h2{
+    /* .diapo__text h2{
         font-size: 3rem;
     }
     .diapo__text p{
         font-size: 1.5rem;
-    }
+    } */
     
     
 
 }
+
+@media(max-width:850px) {
+    .product__container{
+        padding: 50px 5vw 50px 5vw;
+    }
+    
+}
+
+@media(max-width:650px){
+
+    .card{
+        margin-right: 0;
+    }
+    .name{
+        height: auto;
+    }
+}
+
 
 
 
