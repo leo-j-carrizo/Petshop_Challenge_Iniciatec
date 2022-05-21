@@ -154,7 +154,8 @@
    }
 
     .toggle :checked ~ .links-nav {
-        height: 250px;
+        height: 300px;
+        padding:20px 0;
         transition: 0.5s;
    }
    
@@ -168,11 +169,6 @@
     
 }
 
-@media(max-width:850px) {
-    .product__container{
-        padding: 50px 5vw 50px 5vw;
-    }
-    
-}
+
 
 
